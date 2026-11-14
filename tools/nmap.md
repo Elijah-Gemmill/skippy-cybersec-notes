@@ -11,9 +11,9 @@ They include:
 - -sS - TCP SYN scan - Sends a SYN packet and waits for response, but does not complete TCP handshake
 - -sT - TCP Connect Scan - Completes a full TCP handshake, then cancels the connection with a RST packet.
 - -sA - TCP ACK Scan - Sends only an ACK packet, can be used to check firewalls
-- -sV - Service Detection - After checking the TCP connection, Nmap probes for service types, versions, hostname, and OS
+- -sV - Service Detection - After checking the TCP connection, Nmap probes for service types, versions, hostname, and OS - Requires Sudo permissions
 - -sU - UDP Scan - Scans for open UDP ports
-- -sC - Script Scan - Performs scan with default scripts
+- -sC - Script Scan - Performs scan with default scripts - can be used in place of -sV when it times out.
 - --script \<script\> - Performs script scan with a specified script or set of scripts.
 - -O - Performs OS detection
 
