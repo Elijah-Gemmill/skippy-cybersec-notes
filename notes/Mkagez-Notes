@@ -1,0 +1,31 @@
+How to Connect to a service 
+Mariadb 
+mariadb -h Ip-address -u root -p --skip-ssl -if default username and no password replace as needed
+# List databases
+SHOW DATABASES;
+
+# Select database
+USE my_database;
+
+# List tables
+SHOW TABLES;
+
+# View table structure
+DESCRIBE users;
+
+# View table records
+SELECT * FROM users;
+
+# Exit
+EXIT;
+
+FTP 
+Connect to ftp using sudo ftp client 
+ftp ip address 
+Default user = anonymous 
+help to view all possible agruments
+dir to view current directory
+get to get the folders
+press tab to finish a word
+bye to exit a ftp call
+
