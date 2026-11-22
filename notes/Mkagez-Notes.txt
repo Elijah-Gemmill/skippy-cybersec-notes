@@ -1,0 +1,46 @@
+How to Connect to a service 
+Mariadb 
+mariadb -h Ip-address -u root -p --skip-ssl -if default username and no password replace as needed
+# List databases
+SHOW DATABASES;
+
+# Select database
+USE my_database;
+
+# List tables
+SHOW TABLES;
+
+# View table structure
+DESCRIBE users;
+
+# View table records
+SELECT * FROM users;
+
+# Exit
+EXIT;
+
+FTP 
+Connect to ftp using sudo ftp client 
+ftp ip address 
+Default user = anonymous 
+help to view all possible agruments
+dir to view current directory
+get to get the folders
+press tab to finish a word
+bye to exit a ftp call
+
+
+SSH - ssh username@ip
+-find the ports open - ss -lnt then to assoicate it to the service use -ss lt
+local forwarding once you have found the service in which you need ot locally foward yourself exit
+the user and the ssh and then run the command as 
+ ssh -L [local_port]:[destination_host]:[destination_port] [user]@[ssh_server]
+ you can use 1234 as your local port if available (it is most of the time)
+ ss -tlpn - is used for showing serivces and socket (ss)
+ -tlpn - 
+ -t, the -u, or the -x options alone will only list out those connections that are established or connected
+ -l list of current listening sockets 
+ example : ssh -L 1234:localhost:5432 user@ip
+(5432 for postgres)
+Postgres - \d - lists databases or tables
+same select * from table; -
